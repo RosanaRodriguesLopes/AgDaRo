@@ -1,0 +1,30 @@
+﻿@model AgDeViagem.Models.Promoção
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Promoção</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Desconto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Desconto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Valor_Final)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Valor_Final)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id_Promoção">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
